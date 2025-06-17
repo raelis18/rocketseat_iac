@@ -52,3 +52,11 @@ variable "lb_tags" {
   }
   description = "Tags para o load balancer"
 }
+variable availability_zone {
+  type        = list(string)
+  default     = [
+    "us-east-2a",
+    "us-east-2b"
+  ]
+  description = "Availability zones for the VPC subnets"
+}

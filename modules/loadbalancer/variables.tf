@@ -4,8 +4,8 @@ variable lb_name {
   description = "description"
 }
 variable subnets {
-  type        = string
-  default     = ""
+  type        = list(string)
+  default     = []
   description = "List of subnet IDs for the load balancer"
 }
 variable lb_tags {

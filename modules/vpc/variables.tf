@@ -18,3 +18,8 @@ variable private_subnet_cidr_block {
   default     = ""
   description = "CIDR block for the private subnet"
 }
+variable availability_zone {
+  type        = list(string)
+  default     = []
+  description = "Availability zones for the VPC subnets"
+}
